@@ -7,12 +7,12 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model student {
-  student_id     Int     @id
-  full_name      String  @db.VarChar(64)
-  degree         String? @db.VarChar(128)
-  university     String? @db.VarChar(128)
-  specialization String? @db.VarChar(128)
+model Student {
+  id             String   @id @default(uuid())
+  name           String   @db.VarChar(64)
+  email          String   @unique
+  degree         String?  @db.VarChar(128)
+  specialization String?  @db.VarChar(128)
   age_of_studing Int?
-  final_score    Int?
+  score          Float?
 }

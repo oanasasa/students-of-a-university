@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import HomePage from "./pages/home.component";
-import AdminPage from "./pages/admin.component";
-import ErrorPage from "./pages/error.component";
+import HomePage from "./pages/home.component.jsx";
+import RegisterPage from "./pages/register.component.jsx";
+import ErrorPage from "./pages/error.component.jsx";
 
 const router = createBrowserRouter([
   {
@@ -12,13 +12,8 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/admin",
-    element: <AdminPage />,
-    errorElement: <ErrorPage />,
-  },
-  {
     path: "/register",
-    element: <AdminPage />,
+    element: <RegisterPage />,
     errorElement: <ErrorPage />,
   },
 ]);
