@@ -2,25 +2,25 @@
   "name": "my-application",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "dependencies": {
     "@prisma/client": "^4.15.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
     "nodemon": "^2.0.22",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.13.0",
     "react-scripts": "5.0.1",
+    "scss": "^0.2.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "devStart": "nodemon prisma.client.js"
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
   },
   "eslintConfig": {
     "extends": [
@@ -42,5 +42,9 @@
   },
   "devDependencies": {
     "prisma": "^4.15.0"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "prisma.client.js",
+  "author": "",
+  "license": "ISC"
 }
