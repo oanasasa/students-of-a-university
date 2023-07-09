@@ -3,9 +3,9 @@ import "../App.css";
 // import Student from "../components/student.component";
 
 export default function HomePage() {
-  // function createNewStudent() {
-  //   console.log("hi");
-  // }
+  function createNewStudent() {
+    console.log("hi");
+  }
 
   return (
     <>

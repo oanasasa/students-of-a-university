@@ -20,7 +20,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "devStart": "nodemon prisma.client.js"
+    "devStart": "nodemon prisma.client.js",
+    "start": "react-scripts start"
   },
   "eslintConfig": {
     "extends": [
